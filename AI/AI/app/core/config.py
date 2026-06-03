@@ -27,6 +27,8 @@ class Settings(BaseSettings):
     PORT: int 
     
     LOG_LEVEL: str 
+
+    GEMINI_API_KEY: str
     
     model_config = SettingsConfigDict(
         env_file=".env",
